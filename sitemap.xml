@@ -8,248 +8,263 @@
 
 
 <url>
-  <loc>http://dctwedding.com/index.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <loc>http://dctwedding.com/</loc>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>http://dctwedding.com/index.html</loc>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://dctwedding.com/aboutUs.html</loc>
-  <lastmod>2020-11-17T11:12:30+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/service.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/blog.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/feedback_fb.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/survey.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-09-21_%E9%A9%A2%E5%AD%90%E9%A4%90%E5%BB%B3.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-05-15_%E7%BE%8E%E8%BB%8D%E4%BF%B1%E6%A8%82%E9%83%A8BY33.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-05-03_%E9%99%BD%E6%98%8E%E5%B1%B1%E4%B8%AD%E5%9C%8B%E9%BA%97%E7%B7%BB.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-05-03_%E9%99%BD%E6%98%8E%E5%B1%B1%E7%BE%8E%E5%9C%8B%E5%BA%A6%E5%81%87%E6%9D%91.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-03-16_%E7%B6%A0%E9%A2%A8%E8%8D%89%E5%8E%9F.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2019-03-14_%E5%8D%97%E5%85%AB%E9%87%8C%E6%B0%91%E5%AE%BF.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dctwedding.com/portfolio_2018-12-23_%E5%8F%B0%E5%8C%97%E6%96%87%E5%89%B5%E6%9C%83%E6%89%8014%E6%A8%93%EF%BC%88%E6%9D%BE%E8%8F%B814F%EF%BC%89.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <loc>http://dctwedding.com/portfolio_2018-12-23_%E5%8F%B0%E5%8C%97%E6%96%87%E5%89%B5%E6%9C%83%E6%89%8014%E6%A8%93.html</loc>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-10-27_%E9%A6%99%E8%89%B2.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-09-29_%E9%A3%9F%E5%B0%9A%E6%9B%BC%E8%B0%B7bistro&amp;lounge.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-06-09_%E9%9D%92%E9%9D%92%E9%A3%9F%E5%B0%9A%E8%8A%B1%E5%9C%92%E6%9C%83%E9%A4%A8.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-06-03_LAVILLADANSHUI.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-05-06_%E9%9D%92%E7%94%B0%E4%B8%83%E5%85%AD.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-03-24_%E8%94%A1%E7%91%9E%E6%9C%88%E8%88%9E%E8%B9%88%E7%A4%BE-%E7%8E%AB%E7%91%B0%E5%8F%A4%E8%B9%9F.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-03-03_%E7%B6%A0%E8%88%8D%E9%A3%9F%E5%85%89.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2018-01-13_%E5%85%AB%E9%87%8CBali%E6%B0%B4%E7%81%A3%E5%9B%9B%E5%AD%A3%E6%99%AF%E8%A7%80%E9%A4%90%E5%BB%B3.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-12-30_%E6%96%B0%E5%BA%97%E5%84%AA%E8%81%96%E7%BE%8E%E5%9C%B0%E9%84%89%E6%9D%91%E5%BA%A6%E5%81%87%E5%88%A5%E5%A2%85.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-12-23_TAVCafe%E8%97%9D%E8%A1%93%E6%9D%91%E9%A4%90%E5%9D%8A.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-12-17_%E7%B6%A0%E5%85%89%E8%A1%8C%E9%A4%A8.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-11-18_%E7%B6%A0%E8%88%8D%E9%A3%9F%E5%85%89.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-11-12_Super346%E5%8F%B0%E5%95%A4%E9%A4%90%E5%BB%B3.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-11-11_%E5%BD%B0%E5%8C%96%E8%98%91%E8%8F%87%E9%83%A8%E8%90%BD.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-11-05_%E4%B8%96%E8%B2%BF%E5%BB%A3%E5%A0%B4.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-10-28_LAVILLADANSHUI.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-10-22_%E7%9C%9F%E6%84%9B%E6%A1%83%E8%8A%B1%E6%BA%90.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-06-24_%E7%B4%8D%E7%BE%8E%E8%8A%B1%E5%9C%92.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-06-10_%E7%9C%9F%E6%84%9B%E6%A1%83%E8%8A%B1%E6%BA%90.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-05-17_LAVILLADANSHUI.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-05-13_%E5%8F%B0%E5%8C%97%E6%9D%BE%E5%B1%B1%E6%84%8F%E8%88%8D%E9%85%92%E5%BA%97AmbaTaipeiSongshan.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-04-12_%E5%9C%93%E5%B1%B1%E8%81%AF%E8%AA%BC%E6%9C%83.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-03-18_%E9%A3%9F%E5%B0%9A%E6%9B%BC%E8%B0%B7bistro&amp;lounge.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2017-01-20_%E7%B6%A0%E8%88%8D%E9%A3%9F%E5%85%89.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-11-12_%E9%A3%9F%E5%B0%9A%E6%9B%BC%E8%B0%B7bistro&amp;lounge.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-10-16_%E6%A1%83%E5%9C%92%E6%96%B0%E4%BA%BA%E8%87%AA%E5%AE%85.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-10-08_%E6%98%A5%E5%A4%A9%E8%BE%B2%E5%A0%B4.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-09-25_%E9%A2%A8%E8%BB%8A%E6%95%99%E5%A0%82.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-06-26_%E7%B4%80%E5%B7%9E%E5%BA%B5%E6%96%87%E5%AD%B8%E6%A3%AE%E6%9E%97.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/portfolio_2016-05-01_%E9%99%BD%E6%98%8E%E5%B1%B1%E4%B8%AD%E5%9C%8B%E9%BA%97%E7%B7%BB.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://dctwedding.com/portfolio_%E7%BE%8E%E5%BC%8F%E5%A9%9A%E7%B4%97%E6%94%9D%E5%BD%B1_%E6%B8%85%E6%96%B0%E6%A3%AE%E6%9E%97%E8%8D%89%E5%8E%9F.html</loc>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://dctwedding.com/portfolio_%E8%BF%B7%E4%BD%A0%E5%A9%9A%E7%A6%AE%E6%94%9D%E5%BD%B1_%E6%88%90%E7%86%9F%E9%BB%91%E7%B3%BB%E8%8A%B1%E8%97%9D.html</loc>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/%E5%A9%9A%E9%A1%A7%E6%80%8E%E9%BA%BC%E8%BE%A6%E5%A9%9A%E7%A6%AE.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/blog_2018-05-27.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/blog_2018-06-08.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/blog_2019-02-13.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://dctwedding.com/blog_2019-04-13.html</loc>
-  <lastmod>2020-11-17T11:12:31+00:00</lastmod>
+  <lastmod>2020-11-20T08:04:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
