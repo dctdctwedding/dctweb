@@ -668,3 +668,37 @@ input, textarea {
     line-height: 28px; } }
 
 /*# sourceMappingURL=all.css.map */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.text {
+  grid-area: text;
+  margin-left: 2rem;
+}
+
+.gridImg {
+  grid-area: image;
+  width: 70%;
+  height:80%; 
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+    grid-gap: 10px; /* 將間距改為 10px */
+  }
+  .text {
+    order: 2;
+  }
+  img {
+    order: 1;
+  }
+}
