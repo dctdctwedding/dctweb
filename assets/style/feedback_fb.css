@@ -1,0 +1,13 @@
+.flex-item {
+    display: flex;
+}
+
+.place-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item-title {
+    font-size: 16px;
+    margin-bottom: 4px; }
