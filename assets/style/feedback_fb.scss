@@ -1,8 +1,8 @@
 .feedbackItem {
-    border-radius: 2px;
+    border-radius: 4px;
     transition: transform 0.3s ease-out;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
+    
     &:hover {
         transform: scale(1.01);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -16,11 +16,18 @@
     }
 }
 
+.expanded{
+    max-height: 130px;
+    transition: max-height 3s ease-in;
+    transition: max-height 0.33s ease-out;
+}
+
 .item {
     display: flex;
-
+    justify-content: space-around;
+    
     .place-center {
-        width: 20%;
+        width: 15%;
         margin-right: 5px;
         display: flex;
         align-items: center;
@@ -34,7 +41,7 @@
     &-content {
         width: 80%;
         text-align: left;
-        position: relative;
+        //margin-left: 4px;  
 
         &-title {
             font-size: 16px;
@@ -44,7 +51,9 @@
         }
 
         &-text {
+
             font-size: 12px;
+
 
             .more {
                 display: none;
@@ -52,12 +61,8 @@
         }
 
         .btn-more {
-            // left: 0;
-            // right: 0;
             font-size: 12px;
             width: fit-content;
-            //position: absolute;
-
             border: none;
             background: none;
             cursor: pointer;
