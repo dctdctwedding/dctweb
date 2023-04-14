@@ -57,7 +57,7 @@ submitBtn.addEventListener("click", processFormData);
         const UserSource = form.elements.surveyUserSourceId.value;
         const Progress = form.elements.surveyProgressId.value;
         const Submit = form.elements.surveySubmitId.value;
-
+       
         let template_params = {
             "UserName": UserName,
             "UserEmail": UserEmail,
@@ -76,10 +76,16 @@ submitBtn.addEventListener("click", processFormData);
             "Progress": Progress,
             "Submit": Submit,
         };
-        
+        for (let key in template_params) {
+            if (template_params[key] === "") {
+                console.log(`Key: ${key} has empty value.`);
+                return
+            }
+          }  
+
         // 要使用再打開 yooo
         /**/
-        emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
+        // emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
     
         var service_id = "default_service";
         var template_id = "wedding_2020";
