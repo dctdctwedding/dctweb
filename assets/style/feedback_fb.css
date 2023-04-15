@@ -1,0 +1,56 @@
+.feedbackItem {
+  border-radius: 2px;
+  transition: transform 0.3s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.feedbackItem:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.feedbackItem .block {
+  display: block;
+  background-color: #fff;
+  padding: 28px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.item {
+  display: flex;
+}
+.item .place-center {
+  width: 15%;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .place-center img {
+  width: 100%;
+}
+.item-content {
+  width: 80%;
+  text-align: left;
+  position: relative;
+}
+.item-content-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-align: left;
+}
+.item-content-text {
+  font-size: 12px;
+}
+.item-content-text .more {
+  display: none;
+}
+.item-content .btn-more {
+  font-size: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=feedback_fb.css.map */
