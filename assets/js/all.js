@@ -38,17 +38,19 @@ function sendSurvey() {
 const submitBtn = document.getElementById('surveySubmitId');
 submitBtn.addEventListener("click", processFormData);
     function processFormData(e) {
+        // e.preventDefault();
         //取得 name 屬性為 form 的表單
         const form = document.forms['form'];
         //取 elements 集合中 name 屬性為 name 的值
         const UserName = form.elements.surveyUserNameId.value;
         const UserEmail = form.elements.surveyUserEmailId.value;
+        const UserLine = form.elements.surveyUserLineId.value;
         const UserPhone = form.elements.surveyUserPhoneId.value;
         const Service = form.elements.surveyServiceId.value;
         const Date = form.elements.surveyDateId.value;
         const Type = form.elements.surveyTypeId.value;
         const Scenes = form.elements.surveyScenesId.value;
-        const Location = form.elements.surveyLocationId.value;
+        // const Location = form.elements.surveyLocationId.value;
         const UserVenue = form.elements.surveyUserVenueId.value;
         const Attendance = form.elements.surveyAttendanceId.value;
         const ChineseCeremony = form.elements.surveyChineseCeremonyId.value;
@@ -66,7 +68,7 @@ submitBtn.addEventListener("click", processFormData);
             "Date": Date,
             "Type": Type,
             "Scenes": Scenes,
-            "Location": Location,
+            // "Location": Location,
             "UserVenue": UserVenue,
             "Attendance": Attendance,
             "ChineseCeremony": ChineseCeremony,
@@ -74,10 +76,21 @@ submitBtn.addEventListener("click", processFormData);
             "InvitationCard": InvitationCard,
             "UserSource": UserSource,
             "Progress": Progress,
+            "Line":UserLine,
             "Submit": Submit,
         };
-        for (let key in template_params) {
-            if (template_params[key] === "") {
+         let mustCheck_params = {
+            "UserName": UserName,
+            "UserEmail": UserEmail,
+            "UserPhone": UserPhone,
+            "Date": Date,
+            "Scenes":Scenes,
+            "Attendance":Attendance,
+            "UserVenue":UserVenue,
+         }
+        console.log(template_params ,'template_params')
+        for (let key in mustCheck_params) {
+            if (mustCheck_params[key] === "") {
                 console.log(`Key: ${key} has empty value.`);
                 return
             }
@@ -86,9 +99,14 @@ submitBtn.addEventListener("click", processFormData);
         // 要使用再打開 yooo
         /**/
         // emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
-    
-        var service_id = "default_service";
-        var template_id = "wedding_2020";
+        // var service_id = "default_service";
+        // var template_id = "wedding_2020";
+        // emailjs.send(service_id, template_id, template_params);
+        //公鑰
+        
+        emailjs.init("GW5fMt_RXRxjeBdT9");
+        var service_id = "service_x0pe893";
+        var template_id = "template_2nbvo2s";
         emailjs.send(service_id, template_id, template_params);
         console.log("emailjs send");
         alert("成功寄出預約表單囉")

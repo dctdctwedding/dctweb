@@ -188,13 +188,22 @@
     <div class="grid-container">
       <div class="text  main-content-survey">
         <div class="container-md survey-title text-center py-4">
-          <h1 class="h6">打造我的婚禮</h1>
+          <h1 class="h6"> Contact Us
+          </h1>
         </div>
         <div class="container">
           <form class="" name="form">
             <ul class="survyList form-row">
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserNameId" required="">姓名</label>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex ">
+                 <label for="surveyUserNameId" required="" class="d-flex  ">
+                  <div>
+                    <div class="d-flex">
+                      聯絡人姓名
+                      <div class="text-danger">*</div>
+                    </div> 
+                    <div>NAME</div>
+                  </div>                  
+                </label>
                 <input
                   class="form-control"
                   id="surveyUserNameId"
@@ -204,8 +213,32 @@
                   value=""
                 />
               </li>
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserEmailId" required="">e-mail</label>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex ">
+                <label for="surveyUserPhoneId" required="" class="d-flex">
+                  <div>
+                    <div class="d-flex">連絡電話
+                      <div class="text-danger">*</div>
+                    </div> 
+                    <div>PHONE NO.</div>
+                  </div>
+                </label>
+                <input
+                  class="form-control"
+                  id="surveyUserPhoneId"
+                  name="surveyUserPhone"
+                  required="" 
+                  type="text"
+                  value=""
+                />
+              </li>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center">
+                <label for="surveyUserEmailId" required="" class="d-flex">
+                  <div>
+                    <div class="d-flex">Email
+                      <div class="text-danger">*</div>
+                    </div> 
+                  </div>
+                </label>
                 <input
                   class="form-control"
                   id="surveyUserEmailId"
@@ -215,19 +248,111 @@
                   value=""
                 />
               </li>
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserPhoneId" required="">聯絡電話</label>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center">
+                <label for="surveyUserLineId" required="" class="d-flex">
+                  <div>
+                    <div class="d-flex">LINE ID
+                      <div class="text-danger">*</div>                      
+                    </div> 
+                  </div>
+                </label>
                 <input
                   class="form-control"
-                  id="surveyUserPhoneId"
-                  name="surveyUserPhone"
+                  id="surveyUserLineId"
+                  name="surveyUserLine"
+                  required=""
                   type="text"
                   value=""
                 />
               </li>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center">
+                <label for="surveyDateId" class="d-flex">
+                  <div>
+                  <div class="d-flex">預計婚期
+                    <div class="text-danger">*</div>
+                  </div> 
+                  <div>DATE</div>
+
+                  </div>
+                </label>
+                <input
+                  class="form-control"
+                  id="surveyDateId"
+                  name="surveyDate"
+                  required=""
+                  type="text"
+
+                />
+                <!-- placeholder="yyyy/mm/dd"
+                type="date" -->
+
+              </li>
+              <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center">
+                <label for="surveyScenesId">
+                  <div>
+                    <div class="d-flex">
+                      證婚場地
+                    <div class="text-danger">*</div>
+                    </div>
+                  <div>V-place</div>
+                  </div>
+  
+                </label>
+                <input
+                  class="form-control"
+                  id="surveyScenesId"
+                  name="surveyScenes"
+                  required=""
+
+                />
+
+                <!-- <select
+                  class="custom-select"
+                  id="surveyScenesId"
+                  name="surveyScenes"
+                >
+                  <option selected="" value="-請選擇-">-請選擇-</option>
+                  <option value="戶外即可">戶外即可</option>
+                  <option value="草地">草地</option>
+                  <option value="教堂">教堂</option>
+                  <option value="無需證婚">無需證婚</option>
+                </select> -->
+              </li>
+              <li class="col-md-12 mb-4 mb-md-4   d-flex align-items-center">
+                <label for="surveyAttendanceId" class="d-flex">                  
+                  <div>
+                    <div class="d-flex">
+                      參加人數
+                    <div class="text-danger">*</div>
+                    </div>
+                  <div>THE NUMBER　OF PEOPLE</div>
+                  </div>
+                </label>
+                <input
+                  class="form-control"
+                  id="surveyAttendanceId"
+                  name="surveyAttendance"
+                  type="text"
+                  required
+
+                />
+                <!-- <select
+                  class="custom-select"
+                  id="surveyAttendanceId"
+                  name="surveyAttendance"
+                  required
+                >
+                  <option selected="" value="">-請選擇-</option>
+                  <option value="50 人以內">50 人以內</option>
+                  <option value="50-100人">50-100人</option>
+                  <option value="100-150人">100-150人</option>
+                  <option value="150 人以上">150 人以上</option>
+                </select> -->
+              </li>
+
               <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyServiceId">服務需求</label>
-                <select
+                <!-- <select
                   class="custom-select"
                   id="surveyServiceId"
                   name="surveyService"
@@ -237,18 +362,25 @@
                   <option value="婚禮佈置">婚禮佈置</option>
                   <option value="婚顧 + 佈置">婚顧 + 佈置</option>
                   <option value="派對規劃">派對規劃</option>
-                </select>
+                </select> -->
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="surveyServiceId-1" name="surveyService" value="婚顧服務">
+                  <label for="surveyServiceId-1">婚顧服務</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="surveyServiceId-2" name="surveyService" value="婚禮佈置">
+                  <label for="surveyServiceId-2">婚禮佈置</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="surveyServiceId-3" name="surveyService" value="婚顧 + 佈置">
+                  <label for="surveyServiceId-3">婚顧 + 佈置</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="surveyServiceId-4" name="surveyService" value="派對規劃">
+                  <label for="surveyServiceId-4">派對規劃</label>
+                </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyDateId">日期</label>
-                <input
-                  class="form-control"
-                  id="surveyDateId"
-                  name="surveyDate"
-                  placeholder="yyyy/mm/dd"
-                  type="date"
-                />
-              </li>
+
               <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyTypeId">形式</label>
                 <select
@@ -262,22 +394,9 @@
                   <option value="證婚 + 宴客">證婚 + 宴客</option>
                 </select>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyScenesId">證婚場地</label>
-                <select
-                  class="custom-select"
-                  id="surveyScenesId"
-                  name="surveyScenes"
-                >
-                  <option selected="" value="-請選擇-">-請選擇-</option>
-                  <option value="戶外即可">戶外即可</option>
-                  <option value="草地">草地</option>
-                  <option value="教堂">教堂</option>
-                  <option value="無需證婚">無需證婚</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyLocationId">地區</label>
+              
+              <!-- <li class="col-md-6 mb-4 mb-md-4"> -->
+                <!-- <label for="surveyLocationId">地區</label>
                 <select
                   class="custom-select"
                   id="surveyLocationId"
@@ -286,30 +405,17 @@
                   <option selected="" value="-請選擇-">-請選擇-</option>
                   <option value="大台北地區">大台北地區</option>
                   <option value="其他縣市">其他縣市</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyUserVenueId">宴客場地</label>
+                </select> -->
+              <!-- </li> -->
+              <li class="col-md-12 mb-4 mb-md-4">
+                <label for="surveyUserVenueId"class="d-flex">宴客場地<div class="text-danger">*</div></label>
                 <input
                   class="form-control"
                   id="surveyUserVenueId"
                   name="surveyUserVenue"
                   type="text"
+                  required=""
                 />
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyAttendanceId">參加人數</label>
-                <select
-                  class="custom-select"
-                  id="surveyAttendanceId"
-                  name="surveyAttendance"
-                >
-                  <option selected="" value="-請選擇-">-請選擇-</option>
-                  <option value="50 人以內">50 人以內</option>
-                  <option value="50-100人">50-100人</option>
-                  <option value="100-150人">100-150人</option>
-                  <option value="150 人以上">150 人以上</option>
-                </select>
               </li>
               <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyChineseCeremonyId">中式儀式需求</label>
@@ -391,7 +497,7 @@
         </div>
         <!-- -->
       </div>
-      <img class="gridImg" src="assets\resized_photo\aboutUs\拾夢婚顧介紹，戶外婚禮專家-2 2.png" alt="image">
+      <img class="gridImg" src="assets\resized_photo\survey\粉橘奶茶2.jpg" alt="image">
       </div>
     </div>
 
