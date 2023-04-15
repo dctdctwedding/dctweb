@@ -36,9 +36,18 @@ function sendSurvey() {
 }*/
 // const submitBtn = document.querySelector('[data-action="submit"]');
 const submitBtn = document.getElementById('surveySubmitId');
+
 submitBtn.addEventListener("click", processFormData);
     function processFormData(e) {
-        // e.preventDefault();
+        const services = document.getElementsByName('services');
+        const selectedServices = [];
+        for (let i = 0; i < services.length; i++) {
+          if (services[i].checked) {
+            selectedServices.push(services[i].value);
+          }
+        }
+        console.log(selectedServices,'selectedServices');
+        e.preventDefault();
         //取得 name 屬性為 form 的表單
         const form = document.forms['form'];
         //取 elements 集合中 name 屬性為 name 的值
@@ -46,12 +55,13 @@ submitBtn.addEventListener("click", processFormData);
         const UserEmail = form.elements.surveyUserEmailId.value;
         const UserLine = form.elements.surveyUserLineId.value;
         const UserPhone = form.elements.surveyUserPhoneId.value;
-        const Service = form.elements.surveyServiceId.value;
+        const Service = selectedServices;
+        // const Service = form.elements.surveyServiceId.value;
         const Date = form.elements.surveyDateId.value;
         const Type = form.elements.surveyTypeId.value;
         const Scenes = form.elements.surveyScenesId.value;
         // const Location = form.elements.surveyLocationId.value;
-        const UserVenue = form.elements.surveyUserVenueId.value;
+        // const UserVenue = form.elements.surveyUserVenueId.value;
         const Attendance = form.elements.surveyAttendanceId.value;
         const ChineseCeremony = form.elements.surveyChineseCeremonyId.value;
         const Bilingual = form.elements.surveyBilingualId.value;
@@ -69,7 +79,7 @@ submitBtn.addEventListener("click", processFormData);
             "Type": Type,
             "Scenes": Scenes,
             // "Location": Location,
-            "UserVenue": UserVenue,
+            // "UserVenue": UserVenue,
             "Attendance": Attendance,
             "ChineseCeremony": ChineseCeremony,
             "Bilingual": Bilingual,
@@ -86,7 +96,6 @@ submitBtn.addEventListener("click", processFormData);
             "Date": Date,
             "Scenes":Scenes,
             "Attendance":Attendance,
-            "UserVenue":UserVenue,
          }
         console.log(template_params ,'template_params')
         for (let key in mustCheck_params) {
