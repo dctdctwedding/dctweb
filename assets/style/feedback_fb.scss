@@ -1,5 +1,6 @@
 .feedbackItem {
   border-radius: 4px;
+  background-color: #fff;
   transition: transform 0.3s ease-out;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
@@ -17,14 +18,15 @@
 }
 
 .expanded {
-    max-height: 130px;
+    height: 120px;
     overflow: hidden;
-    transition: max-height 1s ease-out;
+    //transition: all 1s ease-out;
 }
 .expanded.active {
     max-height: 500px;
-    transition: max-height 1s ease-in;
+    //transition: all 1s ease-in;
 }
+
 
 .item {
   display: flex;
@@ -72,4 +74,34 @@
       padding: 0;
     }
   }
+}
+
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.desc-wrapper {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+/* Only display 'more' to begin with */
+.more-info .less,
+.more-info.expand .more {
+  display: none;
+}
+.more-info.expand .less {
+  display: inline;
+}
+
+/* Misc, just to make things look a bit prettier */
+.more-info:focus {
+  outline: none;
+}
+span.glyphicon {
+  margin-left: 3px;
 }
