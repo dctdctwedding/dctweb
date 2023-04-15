@@ -27,9 +27,6 @@ function more(id) {
   const moreText = element.querySelector(".more");
   const btnText = element.querySelector(".btn-more");
 
-  
-  console.log("h:",fullHeight)
-
   if (element.classList.contains("active")) {
     element.classList.remove("active");
     dots.style.display = "inline";
