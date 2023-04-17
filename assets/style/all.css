@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@200;300;400;600&display=swap');
+
 .img-body-5-to-2 {
   position: relative;
   width: 100%;
@@ -33,11 +35,13 @@
   font-weight: 350;
   color: rgba(0, 0, 0, 0.836);
   font-size: 14px;
-  font-family: 'Julius Sans One', 'sans-serif'; }
+  font-family: 'Encode Sans Expanded', 'sans-serif'; }
 
 html, body {
   background-color: #f7f5f0; }
-
+.nav-link{
+  text-transform: uppercase;
+}
 .navbar-toggler {
   border: none; }
 
