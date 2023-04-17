@@ -1,18 +1,22 @@
-function more() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("btn");
-  let expanded = document.querySelector(".expanded");
+function more(id) {
+  console.log(id)
+  const element = document.getElementById(id);
+  const dots = element.querySelector("#dots");
+  const moreText = element.querySelector(".more");
+  const btnText = element.querySelector(".btn-more");
 
-  if (expanded.classList.contains("active")) {
-    expanded.classList.remove("active");
+  if (element.classList.contains("active")) {
+    element.classList.remove("active");
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
+    $('#'+id).animate({'height': 136}, 300);
   } else {
-    expanded.classList.add("active");
+    element.classList.add("active");
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
+    var fullHeight = element.querySelector(".block").offsetHeight;
+    $('#'+id).css({'height': 136, 'max-height': 'none'}).animate({'height': fullHeight}, 300);
   }
 }
