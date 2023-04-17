@@ -10,13 +10,13 @@ function more(id) {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
-    $('#'+id).animate({'height': 120}, 300);
+    $('#'+id).animate({'height': 136}, 300);
   } else {
     element.classList.add("active");
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
     var fullHeight = element.querySelector(".block").offsetHeight;
-    $('#'+id).css({'height': 120, 'max-height': 'none'}).animate({'height': fullHeight}, 300);
+    $('#'+id).css({'height': 136, 'max-height': 'none'}).animate({'height': fullHeight}, 300);
   }
 }

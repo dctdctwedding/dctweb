@@ -18,7 +18,7 @@
 }
 
 .expanded {
-    height: 120px;
+    height: 136px;
     overflow: hidden;
     //transition: all 1s ease-out;
 }
@@ -27,7 +27,6 @@
     max-height: 500px;
     //transition: all 1s ease-in;
 }
-
 
 .item {
     display: flex;
@@ -69,7 +68,6 @@
             span {
                 white-space: pre-line;
             }
-
 
         }
 
