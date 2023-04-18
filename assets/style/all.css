@@ -912,7 +912,7 @@ textarea {
   justify-items: center;
 }
 
-.text {
+/* .text {
   grid-area: text;
   margin-left: 2rem;
 }
@@ -921,7 +921,7 @@ textarea {
   grid-area: image;
   width: 70%;
   height: 80%;
-}
+} */
 
 @media (max-width: 768px) {
   .grid-container {

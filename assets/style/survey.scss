@@ -25,9 +25,59 @@
   margin: 0;
   font-weight: normal;
   cursor: pointer;
-
 }
 
 .sruveysideTitle {
   font-size: 12px;
+}
+
+.surveyGrid {
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    //向右靠攏
+    margin-left: 12rem;
+  }
+}
+
+.checkboxSurvey {
+  &-style {
+    margin-left: 1rem;
+  }
+}
+
+.text {
+  grid-area: text;
+  margin-left: 2rem;
+}
+
+.gridImg {
+  grid-area: image;
+  width: 70%;
+  height: 80%;
+}
+.surveySelectTitle {
+  width: 35%;
+}
+@media (max-width: 768px) {
+  .surveyGrid {
+    &-container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "image" "text";
+      grid-gap: 10px;
+      margin-left: 0;
+    }
+
+    .text {
+      order: 2;
+    }
+
+    img {
+      order: 1;
+    }
+  }
 }

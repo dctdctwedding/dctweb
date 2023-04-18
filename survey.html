@@ -187,7 +187,7 @@
         </div>
       </nav>
     </header>
-    <div class="grid-container">
+    <div class="surveyGrid-container">
       <div class="text  main-content-survey">
         <div class="container-md survey-title text-center py-4">
           <h1 class="h6"> Contact Us
@@ -363,38 +363,38 @@
                   <option value="婚顧 + 佈置">婚顧 + 佈置</option>
                   <option value="派對規劃">派對規劃</option>
                 </select> -->
-                <ul class="col-md-12 mb-4 mb-md-4 d-flex">
-                  <div >
+                <div class="col-md-12 mb-4 mb-md-4 d-flex">
+                  <div class="surveySelectTitle">
                     <div>服務需求 (可複選)</div>
                     <p class="sruveysideTitle">SERVICE REQUIREMENTS</p>
                   </div>
                   <li >
                     <div   class="custom-checkbox"> 
-                      <input type="checkbox" name="services" value="婚顧服務" id="chk1">
-                      <label for="chk1">婚顧服務</label>
+                      <input type="checkbox" name="services" value="婚顧服務" id="services1">
+                      <label for="services1">婚顧服務</label>
                     </div>
                   </li>
                 <li >
                   <div  class="custom-checkbox"> 
-                  <input type="checkbox" name="services" value="婚禮佈置" id="chk2">
-                  <label for="chk2">婚禮佈置</label>
+                  <input type="checkbox" name="services" value="婚禮佈置" id="services2">
+                  <label for="services2">婚禮佈置</label>
                 </div>
                 </li>
                 <li >
                   <div  class="custom-checkbox"> 
-                  <input type="checkbox" name="services" value="婚顧 + 佈置" id="chk3">
-                  <label for="chk3">婚顧 + 佈置</label>
+                  <input type="checkbox" name="services" value="婚顧 + 佈置" id="services3">
+                  <label for="services3">婚顧 + 佈置</label>
                 </div>
                 </li>
                 <li>
                   <div  class="custom-checkbox"> 
-                  <input type="checkbox" name="services" value="派對規劃" id="chk4">
-                  <label for="chk4">派對規劃</label>
+                  <input type="checkbox" name="services" value="派對規劃" id="services4">
+                  <label for="services4">派對規劃</label>
                 </div>
                 </li>
-              </ul>
+              </div>
 
-              <li class="col-md-6 mb-4 mb-md-4">
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyTypeId">形式</label>
                 <select
                 class="custom-select"
@@ -406,8 +406,50 @@
                   <option value="純宴客">純宴客</option>
                   <option value="證婚 + 宴客">證婚 + 宴客</option>
                 </select>
-              </li>
+              </li> -->
               
+              
+              <div class="col-md-12 mb-4 mb-md-4 d-flex">
+                <div class="surveySelectTitle">
+                  <div>形式 (可複選)</div>
+                  <p class="sruveysideTitle">TYPES</p>
+                </div>
+                <li >
+                  <div   class="custom-checkbox"> 
+                    <input type="checkbox" name="surveyTypeId" value="迎娶儀式" id="chk1">
+                    <label for="chk1">迎娶儀式</label>
+                  </div>
+                </li>
+              <li >
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="surveyTypeId" value="文定儀式" id="chk2">
+                <label for="chk2">文定儀式</label>
+              </div>
+              </li>
+              <li >
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="surveyTypeId" value="西式證婚" id="chk3">
+                <label for="chk3">西式證婚</label>
+              </div>
+              </li>
+              <li>
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="surveyTypeId" value="宴客" id="chk4">
+                <label for="chk4">宴客</label>
+              </div>
+              </li>
+              <li>
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="surveyTypeId" value="After Party" id="chk5">
+                <label for="chk5">After Party</label>
+              </div>
+              </li> <li>
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="surveyTypeId" value="派對規劃" id="chk6">
+                <label for="chk6">派對規劃</label>
+              </div>
+              </li>
+            </div>
               <!-- <li class="col-md-6 mb-4 mb-md-4"> -->
                 <!-- <label for="surveyLocationId">地區</label>
                 <select
@@ -430,7 +472,7 @@
                   required=""
                 />
               </li> -->
-              <li class="col-md-6 mb-4 mb-md-4">
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyChineseCeremonyId">中式儀式需求</label>
                 <select
                   class="custom-select"
@@ -443,8 +485,57 @@
                   <option value="文定+迎娶">文定+迎娶</option>
                   <option value="不需要中式儀式">不需要中式儀式</option>
                 </select>
+              </li> -->
+              <div class="col-md-12 mb-4 mb-md-4 d-flex">
+                <div class="surveySelectTitle">
+                  <div>餐點形式 (可複選)</div>
+                  <p class="sruveysideTitle">TYPE OF FOOD</p>
+                </div>
+                <li >
+                  <div   class="custom-checkbox"> 
+                    <input type="checkbox" name="mealForm" value="西式自助餐" id="mealForm1">
+                    <label for="mealForm1">西式自助餐</label>
+                  </div>
+                </li>
+              <li >
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="mealForm" value="中式餐桌" id="mealForm2">
+                <label for="mealForm2">中式餐桌</label>
+              </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              <li >
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="mealForm" value="其他" id="mealForm3">
+                <label for="mealForm3">其他</label>
+                <input
+                id="mealFormOtherInput"
+                name="mealForm"
+                type="text"
+  
+              />
+              </div>
+              </li>             
+            </div>
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>宴客時間(可複選)</div>
+                <p class="sruveysideTitle">BANQUET TIME</p>
+              </div>
+              <li >
+                <div   class="custom-checkbox"> 
+                  <input type="checkbox" name="banquetTime" value="午宴" id="banquetTime1">
+                  <label for="banquetTime1">午宴</label>
+                </div>
+              </li>
+            <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="banquetTime" value="晚宴" id="banquetTime2">
+              <label for="banquetTime2">晚宴</label>
+            </div>
+            </li>
+                    
+          </div>
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyBilingualId">雙語服務需求</label>
                 <select
                   class="custom-select"
@@ -455,8 +546,101 @@
                   <option value="需要">需要</option>
                   <option value="不需要">不需要</option>
                 </select>
+              </li> -->
+              <div class="col-md-12 mb-4 mb-md-4 d-flex">
+                <div class="surveySelectTitle">
+                  <div>雙語服務需求(可複選)</div>
+                  <p class="sruveysideTitle">BILINGUAL SERVICE</p>
+                </div>
+                <li >
+                  <div   class="custom-checkbox"> 
+                    <input type="checkbox" name="bilingual" value="是" id="bilingual1">
+                    <label for="bilingual1">是</label>
+                  </div>
+                </li>
+              <li >
+                <div  class="custom-checkbox"> 
+                <input type="checkbox" name="bilingual" value="否" id="bilingual2">
+                <label for="bilingual2">否</label>
+              </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+            
+            </div>
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>喜帖設計(可複選)</div>
+                <p class="sruveysideTitle">WEDDING INVITATION DESIGN</p>
+              </div>
+              <li >
+                <div   class="custom-checkbox"> 
+                  <input type="checkbox" name="stickerDesign" value="是" id="stickerDesign1">
+                  <label for="stickerDesign1">是</label>
+                </div>
+              </li>
+            <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="stickerDesign" value="否" id="stickerDesign2">
+              <label for="stickerDesign2">否</label>
+             </div>
+             </li>
+          
+            </div>
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>如何得知我們(可複選)</div>
+                <p class="sruveysideTitle">HOW DO YOU KNOW US</p>
+              </div>
+              <li >
+                <div   class="custom-checkbox"> 
+                  <input type="checkbox" name="surveyUserSourceId" value="親友介紹" id="surveyUserSourceId1">
+                  <label for="surveyUserSourceId1">親友介紹</label>
+                </div>
+              </li>
+            <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="surveyUserSourceId" value="網頁搜尋" id="surveyUserSourceId2">
+              <label for="surveyUserSourceId2">網頁搜尋</label>
+            </div>
+            </li>
+            <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="surveyUserSourceId" value="臉書" id="surveyUserSourceId3">
+              <label for="surveyUserSourceId3">臉書</label>
+            </div>
+            </li> <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="surveyUserSourceId" value="IG" id="surveyUserSourceId4">
+              <label for="surveyUserSourceId4">IG</label>
+            </div>
+            </li> <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="surveyUserSourceId" value="廠商推薦" id="surveyUserSourceId5">
+              <label for="surveyUserSourceId5">廠商推薦</label>
+              <input
+              id="surveyUserSourceMRIdInput"
+              name="surveyDate"
+              type="text"
+
+            />
+            </div>
+            </li>
+            <li >
+              <div  class="custom-checkbox"> 
+              <input type="checkbox" name="surveyUserSourceId" value="其他" id="surveyUserSourceId6">
+              <label for="surveyUserSourceId6">其他
+               
+
+              </label>
+              <input
+              id="surveyUserSourceIdInput"
+              name="surveyDate"
+              type="text"
+
+            />
+            </div>
+            </li>
+          </div>
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyInvitationCardId">喜帖設計需求</label>
                 <select
                   class="custom-select"
@@ -467,8 +651,8 @@
                   <option value="需要">需要</option>
                   <option value="不需要">不需要</option>
                 </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              </li> -->
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyUserSourceId">如何得知我們</label>
                 <select
                   class="custom-select"
@@ -483,11 +667,13 @@
                   <option value="廠商推薦">廠商推薦</option>
                   <option value="其他">其他</option>
                 </select>
-              </li>
+              </li> -->
               <li class="col-md-12 mb-4 mb-md-4 input-group-lg">
                 <label for="surveyProgressId"
                   >關於籌備進度，有什麼想告訴我們的嗎</label
                 >
+                <p class="sruveysideTitle">ANY QUESTIONS ABOUT WEDDING PREPARING</p>
+
                 <textarea
                   class="w-100 border-0 form-control"
                   cols=""

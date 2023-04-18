@@ -1,0 +1,19 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-checkbox input[type=checkbox]:checked {
+  background-color: #d2d2d1;
+}
+
+.custom-checkbox label {
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.sruveysideTitle {
+  font-size: 12px;
+}/*# sourceMappingURL=survey.css.map */
