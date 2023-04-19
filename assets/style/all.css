@@ -635,9 +635,9 @@ textarea {
   font-size: 14px;
 }
 
-.survyList label {
-  width: 100%;
-}
+/* .survyList label {
+  width: 50%;
+} */
 
 .form-control,
 .custom-select {

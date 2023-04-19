@@ -1,30 +1,39 @@
+@import "./utilities/variables";
+
+.contact-title{
+  color: $primary-green;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 .custom-checkbox {
   display: flex;
   align-items: center;
   gap: 10px;
-}
 
-.custom-checkbox input[type="checkbox"] {
-  /* CSS 屬性讓 checkbox 變成圓形 */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 50%;
-  width: 14px;
-  height: 11px;
-  border: 1px solid #ccc;
-  margin: 0;
-  cursor: pointer;
-}
+  input[type="checkbox"] {
+    /* CSS 屬性讓 checkbox 變成圓形 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 14px;
+    height: 11px;
+    border: 1px solid #ccc;
+    margin: 0;
+    cursor: pointer;
 
-.custom-checkbox input[type="checkbox"]:checked {
-  background-color: #d2d2d1;
-}
+    &:checked {
+      background-color: #d2d2d1;
+    }
+  }
 
-.custom-checkbox label {
-  margin: 0;
-  font-weight: normal;
-  cursor: pointer;
+  label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+    width: 80%;
+  }
 }
 
 .sruveysideTitle {
@@ -40,7 +49,43 @@
     align-items: center;
     justify-items: center;
     //向右靠攏
-    margin-left: 12rem;
+    //margin-left: 12rem;
+    background-color: $primary-white;
+    border-radius: 5px;
+    margin: 60px;
+
+    .text {
+      grid-area: text;
+      margin-left: 2rem;
+    }
+
+    .gridImg {
+      grid-area: image;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      padding: 80px;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .survyList{
+      &-input label{
+        width: 25%;
+
+        + input{
+          width: 70%;
+          border-radius: 5px;
+          margin-right: 20px;
+          border: solid 1px $light-gray;
+          background-color: $primary-white;
+        }
+      }      
+    }
+
   }
 }
 
@@ -50,19 +95,11 @@
   }
 }
 
-.text {
-  grid-area: text;
-  margin-left: 2rem;
-}
 
-.gridImg {
-  grid-area: image;
-  width: 70%;
-  height: 80%;
-}
 .surveySelectTitle {
   width: 35%;
 }
+
 @media (max-width: 768px) {
   .surveyGrid {
     &-container {
