@@ -115,6 +115,18 @@ span.glyphicon {
   margin-left: 3px;
 }
 
+@media (max-width: 995px) {
+    .feedbackItem .block {
+        padding: 21px;
+    }
+    .item {
+      .place-center {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
 @media (max-width: 600px) {
   .item {
     .place-center {
