@@ -120,6 +120,11 @@
   align-items: center;
 }
 
+.input-group-lg textarea{
+  border-radius: 5px;
+  border: solid 1px $light-gray !important;
+}
+
 @media (max-width: 1500px) {
   .survyList-input{
     flex-wrap: wrap;
