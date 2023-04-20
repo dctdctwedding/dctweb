@@ -78,6 +78,35 @@
     .survyList {
       &-input {
         display: flex;
+        
+        input::-webkit-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Mozilla Firefox 4 to 18 */
+        :-moz-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Mozilla Firefox 19+ */
+        ::-moz-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Internet Explorer 10-11 */
+        input:-ms-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Microsoft Edge */
+        input::-ms-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
 
         .sruveyside {
           &-Title {
@@ -125,6 +154,7 @@
 
 .input-group-lg {
   width: 800px;
+
   textarea {
     border-radius: 5px;
     border: solid 1px $light-gray !important;
@@ -180,5 +210,5 @@
   .input-group-lg {
     width: 300px;
   }
-  
+
 }
