@@ -117,74 +117,45 @@
       <div class="container">
         <form class="" name="form">
           <ul class="survyList form-row">
-            <li class="col-md-6 mb-4 mb-md-4 d-flex survyList-input">
-              <label for="surveyUserNameId" required="" class="d-flex">
-                <div>
-                  <div class="d-flex">
-                    聯絡人姓名
-                    <div class="text-danger">*</div>
-                  </div>
-                  <div class="sruveysideTitle">NAME</div>
-                </div>
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyUserNameId" required="" class="sruveyside">
+                <div class="sruveyside-Title">聯絡人姓名</div>
+                <div class="sruveyside-TitleE">NAME</div>
               </label>
               <input placeholder="請輸入姓名" class="form-control" id="surveyUserNameId" name="surveyUserName" required="" type="text" value="" />
             </li>
-            <li class="col-md-6 mb-4 mb-md-4 d-flex survyList-input">
-              <label for="surveyUserPhoneId" required="" class="d-flex">
-                <div>
-                  <div class="d-flex">連絡電話
-                    <div class="text-danger">*</div>
-                  </div>
-                  <div class="sruveysideTitle">PHONE NO.</div>
-                </div>
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyUserPhoneId" required="" class="sruveyside">
+                <div class="sruveyside-Title">連絡電話</div>
+                <div class="sruveyside-TitleE">PHONE NO.</div>
               </label>
               <input class="form-control" id="surveyUserPhoneId" name="surveyUserPhone" required="" type="text"  value="" />
             </li>
-            <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center survyList-input">
-              <label for="surveyUserEmailId" required="" class="d-flex">
-                <div>
-                  <div class="d-flex">Email
-                    <div class="text-danger">*</div>
-                  </div>
-                </div>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyUserEmailId" required="" class="sruveyside">
+                <div class="sruveyside-Title">Email</div>
               </label>
               <input class="form-control" id="surveyUserEmailId" name="surveyUserEmail" required="" type="email"  value="" />
             </li>
-            <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center survyList-input">
-              <label for="surveyUserLineId" required="" class="d-flex">
-                <div>
-                  <div class="d-flex">LINE ID
-                    <div class="text-danger">*</div>
-                  </div>
-                </div>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyUserLineId" required="" class="sruveyside">
+                <div class="sruveyside-Title">LINE ID</div>
               </label>
               <input class="form-control" id="surveyUserLineId" name="surveyUserLine" required="" type="text"  value="" />
             </li>
-            <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center survyList-input">
-              <label for="surveyDateId" class="d-flex">
-                <div>
-                  <div class="d-flex">預計婚期
-                    <div class="text-danger">*</div>
-                  </div>
-                  <div class="sruveysideTitle">DATE</div>
-
-                </div>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyDateId" class="sruveyside">
+                <div class="sruveyside-Title">預計婚期</div>
+                <div class="sruveyside-TitleE">DATE</div>
               </label>
               <input class="form-control" id="surveyDateId" name="surveyDate" required="" type="text" />
               <!-- placeholder="yyyy/mm/dd"
                 type="date" -->
-
             </li>
-            <li class="col-md-6 mb-4 mb-md-4 d-flex align-items-center survyList-input">
-              <label for="surveyScenesId">
-                <div>
-                  <div class="d-flex">
-                    婚禮場地
-                    <div class="text-danger">*</div>
-                  </div>
-                  <div class="sruveysideTitle">VENUE</div>
-                </div>
-
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyScenesId" class="sruveyside">
+                <div class="sruveyside-Title">婚禮場地</div>
+                <div class="sruveyside-TitleE">V-place</div>
               </label>
               <input class="form-control" id="surveyScenesId" name="surveyScenes" required="" />
 
@@ -200,15 +171,10 @@
                   <option value="無需證婚">無需證婚</option>
                 </select> -->
             </li>
-            <li class="col-md-12 mb-4 mb-md-4   d-flex align-items-center survyList-input">
-              <label for="surveyAttendanceId" class="d-flex">
-                <div>
-                  <div class="d-flex">
-                    參加人數
-                    <div class="text-danger">*</div>
-                  </div>
-                  <div class="sruveysideTitle">THE NUMBER　OF PEOPLE</div>
-                </div>
+            <li class="col-md-12 mb-4 mb-md-4  survyList-input">
+              <label for="surveyAttendanceId" class="sruveyside">
+                <div class="sruveyside-Title">參加人數</div>
+                <div class="sruveyside-TitleE">THE NUMBER　OF PEOPLE</div>
               </label>
               <input class="form-control" id="surveyAttendanceId" name="surveyAttendance" type="text" required />
               <!-- <select
@@ -280,7 +246,6 @@
                   <option value="證婚 + 宴客">證婚 + 宴客</option>
                 </select>
               </li> -->
-
 
             <div class="col-md-12 mb-4 mb-md-4 d-flex">
               <div class="surveySelectTitle">
@@ -553,7 +518,7 @@
       <!-- -->
     </div>
     <div class="gridImg">
-      <img  src="assets\resized_photo\survey\粉橘奶茶2.jpg" alt="image">
+      <img  src="assets\resized_photo\survey\粉橘奶茶2.jpg" alt="form表單圖片">
     </div>
   </div>
   </div>
