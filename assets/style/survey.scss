@@ -1,10 +1,14 @@
 @import "./utilities/variables";
 
-.contact-title {
-  color: $primary-green;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: $primary-green;
+.contact {
+  &-title {
+    color: $primary-green;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $primary-green;
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+  }
 }
 
 .custom-checkbox {
@@ -78,7 +82,7 @@
     .survyList {
       &-input {
         display: flex;
-        
+
         input::-webkit-input-placeholder {
           color: $light-gray;
           font-size: 10px;
@@ -125,9 +129,9 @@
       &-input label {
         width: 30%;
 
-        +input {
+        + input {
           width: 70%;
-          border-radius: 5px;
+          border-radius: 0px;
           margin-right: 20px;
           border: solid 1px $light-gray;
           background-color: $primary-white;
@@ -161,19 +165,19 @@
   }
 }
 
+//複選規則
+
 @media (max-width: 1500px) {
   .survyList-input {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-start;
-
   }
 
   .sruveyside {
     text-align: left;
   }
 }
-
 
 @media (max-width: 900px) {
   .surveyGrid {
@@ -202,13 +206,18 @@
   .input-group-lg {
     width: 450px;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .input-group-lg {
     width: 300px;
   }
-
 }
+
+// @media (min-width: 768px) {
+
+//   .checkboxStyle{
+//     display:flex;
+//   }
+
+// }
