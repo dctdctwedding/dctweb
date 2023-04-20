@@ -136,19 +136,22 @@
 @media (max-width: 900px) {
   .surveyGrid {
     &-container {
-      grid-template-columns: 1fr;
-      grid-template-areas: "image" "text";
-      grid-gap: 10px;      
+      display: inline-block;
+      // grid-template-columns: 1fr;
+      // grid-template-rows: 3fr 7fr;
+      // grid-template-areas: "image" "text";
+      // grid-column-gap: 0px;
+      // grid-row-gap: 0px;
     }
     &-container .gridImg img{
-      border-radius: 10px 10px 0 0;
+      border-radius: 0 0 10px 10px;
     }
-    .text {
-      order: 2;
-    }
+    // .text {
+    //   order: 2;
+    // }
 
-    img {
-      order: 1;
-    }
+    // img {
+    //   order: 1;
+    // }
   }
 }
