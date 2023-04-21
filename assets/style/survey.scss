@@ -14,7 +14,7 @@
 .custom-checkbox {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 
   input[type="checkbox"] {
     /* CSS 屬性讓 checkbox 變成圓形 */
@@ -129,7 +129,7 @@
       &-input label {
         width: 30%;
 
-        + input {
+        +input {
           width: 70%;
           border-radius: 0px;
           margin-right: 20px;
@@ -141,14 +141,34 @@
   }
 }
 
-.checkboxSurvey {
-  &-style {
-    margin-left: 1rem;
+
+
+.surveySelect {
+  .checkboxSurvey {
+    &-style {
+      margin-left: 1rem;
+    }
+  }
+  .moreThanThree{
+    column-count:3;
+    column-width:90px;
+  }
+  &-option {
+    margin-right: 10px;
+  }
+  label{
+    white-space: nowrap;
   }
 }
 
+
 .surveySelectTitle {
   width: 35%;
+}
+
+.surveySelectOption {
+  display: flex;
+
 }
 
 .inputflexStyle {
