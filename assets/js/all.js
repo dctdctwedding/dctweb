@@ -157,7 +157,7 @@ submitBtn.addEventListener("click", processFormData);
             // "UserVenue": UserVenue,
             "Attendance": Attendance,
             // "ChineseCeremony": ChineseCeremony,
-            "banquetTime":banquetTime,
+            "banquetTime":banquetTimeList,
             "Bilingual": Bilingual,
             "InvitationCard": InvitationCard,
             "UserSource": UserSource,
@@ -193,7 +193,6 @@ submitBtn.addEventListener("click", processFormData);
             if (mustCheck_params[key] === "") {
                   
                 
-                console.log(`Key: ${translate[key]} has empty value.`);
                 Toastify({
                   text: `${translate[key]} 尚未填寫.`,
                   duration: 6000,
@@ -211,9 +210,6 @@ submitBtn.addEventListener("click", processFormData);
                 }).showToast();
                 return
             }else {
-              console.log(mustCheck_params[key],'mustCheck_params[key]')
-              console.log(key === "UserEmail",'key === "UserEmail"')
-              console.log(validateEmail(mustCheck_params[key]),'validateEmail(mustCheck_params[key])')
               if(key === "UserEmail"  ) {
                 if( !validateEmail(mustCheck_params[key])){
                 Toastify({
