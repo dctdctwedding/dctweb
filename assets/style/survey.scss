@@ -129,7 +129,7 @@
       &-input label {
         width: 30%;
 
-        +input {
+        + input {
           width: 70%;
           border-radius: 0px;
           margin-right: 20px;
@@ -141,26 +141,25 @@
   }
 }
 
-
-
 .surveySelect {
   .checkboxSurvey {
     &-style {
       margin-left: 1rem;
     }
   }
-  .moreThanThree{
-    column-count:3;
-    column-width:90px;
+  .moreThanThree {
+    column-count: 3;
+    column-width: 90px;
   }
+  
   &-option {
     margin-right: 10px;
   }
-  label{
+ 
+  label {
     white-space: nowrap;
   }
 }
-
 
 .surveySelectTitle {
   width: 35%;
@@ -168,7 +167,6 @@
 
 .surveySelectOption {
   display: flex;
-
 }
 
 .inputflexStyle {
@@ -187,11 +185,14 @@
 
 //複選規則
 
-@media (max-width: 1500px) {
-  .survyList-input {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
+@media (max-width: 1260px) {
+//rwd 如何得知我們(可複選) 小視窗 顯示模式
+  .surveySelect {
+    .moreThanThree {
+      column-count: 1;
+      column-width: 90px;
+    }  
+
   }
 
   .sruveyside {

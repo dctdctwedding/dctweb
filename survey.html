@@ -351,7 +351,7 @@
                 <li class="surveySelect-option">
                   <div class="custom-checkbox survyList-input">
 
-                    <label for="mealForm3" class="ml-3"><input type="checkbox" name="mealForm" value="其他"
+                    <label for="mealForm3" ><input type="checkbox" name="mealForm" value="其他"
                         id="mealForm3">其他</label>
                     <input id="mealFormOtherInput" name="mealForm" type="text" />
                   </div>
@@ -428,47 +428,49 @@
               </li>
 
             </div>
-            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+            <div class="col-md-12 mb-4 mb-md-4 d-flex surveySelect">
               <div class="surveySelectTitle">
                 <div>如何得知我們(可複選)</div>
                 <p class="sruveysideTitle">HOW DO YOU KNOW US</p>
               </div>
-              <div class="inputflexStyle">
-                <li>
+              <div class="moreThanThree">
+                <li class="surveySelect-option">
                   <div class="custom-checkbox">
                     <input type="checkbox" name="surveyUserSourceId" value="親友介紹" id="surveyUserSourceId1">
                     <label for="surveyUserSourceId1">親友介紹</label>
                   </div>
                 </li>
-                <li>
+               
+                <li class="surveySelect-option">
                   <div class="custom-checkbox">
                     <input type="checkbox" name="surveyUserSourceId" value="網頁搜尋" id="surveyUserSourceId2">
                     <label for="surveyUserSourceId2">網頁搜尋</label>
                   </div>
                 </li>
-                <li>
+                <li class="surveySelect-option">
                   <div class="custom-checkbox">
                     <input type="checkbox" name="surveyUserSourceId" value="臉書" id="surveyUserSourceId3">
-                    <label for="surveyUserSourceId3">臉書</label>
+                    <label for="surveyUserSourceId3">Facebook</label>
                   </div>
                 </li>
-                <li>
+               
+                <li class="surveySelect-optionWithInput">
+                  <div class="custom-checkbox survyList-input">
+                    <input type="checkbox" name="surveyUserSourceId" value="廠商推薦" id="surveyUserSourceId5">
+                    <label for="surveyUserSourceId5" >廠商推薦</label>
+                    <input id="surveyUserSourceMRIdInput" name="surveyDate" type="text" />
+                  </div>
+                </li>
+                <li class="surveySelect-option">
                   <div class="custom-checkbox">
                     <input type="checkbox" name="surveyUserSourceId" value="IG" id="surveyUserSourceId4">
                     <label for="surveyUserSourceId4">IG</label>
                   </div>
                 </li>
-                <li>
-                  <div class="custom-checkbox survyList-input">
-                    <!-- <input type="checkbox" name="surveyUserSourceId" value="廠商推薦" id="surveyUserSourceId5"> -->
-                    <label for="surveyUserSourceId5" class="ml-3">廠商推薦</label>
-                    <input id="surveyUserSourceMRIdInput" name="surveyDate" type="text" />
-                  </div>
-                </li>
-                <li>
+                <li class="surveySelect-optionWithInput">
                   <div class="custom-checkbox  survyList-input"">
-                  <label for=" surveyUserSourceId6" class="ml-3">其他
-                    <!-- <input type="checkbox" name="surveyUserSourceId" value="其他" id="surveyUserSourceId6"> -->
+                    <input type="checkbox" name="surveyUserSourceId" value="其他" id="surveyUserSourceId6">                    
+                    <label for=" surveyUserSourceId6" >其他
                     </label>
                     <input id="surveyUserSourceIdInput" name="surveyDate" type="text" />
                   </div>
