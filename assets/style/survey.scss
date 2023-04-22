@@ -1,0 +1,249 @@
+@import "./utilities/variables";
+
+.contact {
+  &-title {
+    color: $primary-green;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $primary-green;
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  input[type="checkbox"] {
+    /* CSS 屬性讓 checkbox 變成圓形 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 14px;
+    height: 11px;
+    border: 1px solid #ccc;
+    margin: 0;
+    cursor: pointer;
+
+    &:checked {
+      background-color: #d2d2d1;
+    }
+  }
+
+  label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+    width: 80%;
+  }
+}
+
+.sruveysideTitle {
+  font-size: 12px;
+}
+
+.surveyGrid {
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    //向右靠攏
+    //margin-left: 12rem;
+    background-color: $primary-white;
+    border-radius: 10px;
+    margin: 60px;
+
+    .text {
+      grid-area: text;
+      margin-left: 2rem;
+    }
+
+    .gridImg {
+      grid-area: image;
+      width: 100%;
+      height: 100%;
+      //border-radius: 5px;
+      border-radius: 0 10px 10px 0;
+
+      //padding: 80px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+
+    .survyList {
+      &-input {
+        display: flex;
+
+        input::-webkit-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Mozilla Firefox 4 to 18 */
+        :-moz-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Mozilla Firefox 19+ */
+        ::-moz-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Internet Explorer 10-11 */
+        input:-ms-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        /* Microsoft Edge */
+        input::-ms-input-placeholder {
+          color: $light-gray;
+          font-size: 10px;
+        }
+
+        .sruveyside {
+          &-Title {
+            &::after {
+              content: "*";
+              color: #dc3545;
+            }
+          }
+
+          &-TitleE {
+            font-size: 8px;
+          }
+        }
+      }
+
+      &-input label {
+        width: 30%;
+
+        + input {
+          width: 70%;
+          border-radius: 0px;
+          margin-right: 20px;
+          border: solid 1px $light-gray;
+          background-color: $primary-white;
+        }
+      }
+    }
+  }
+}
+
+.surveySelect {
+  .checkboxSurvey {
+    &-style {
+      margin-left: 1rem;
+    }
+  }
+  .moreThanThree {
+    column-count: 3;
+    column-width: 90px;
+  }
+  
+  &-option {
+    margin-right: 10px;
+  }
+ 
+  label {
+    white-space: nowrap;
+  }
+}
+
+.surveySelectTitle {
+  width: 35%;
+}
+
+.surveySelectOption {
+  display: flex;
+}
+
+.inputflexStyle {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-lg {
+  width: 800px;
+
+  textarea {
+    border-radius: 5px;
+    border: solid 1px $light-gray !important;
+  }
+}
+
+//複選規則
+
+@media (max-width: 1260px) {
+//rwd 如何得知我們(可複選) 小視窗 顯示模式
+  .surveySelect {
+    .moreThanThree {
+      column-count: 1;
+      column-width: 90px;
+    }  
+
+  }
+
+  .sruveyside {
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .surveyGrid {
+    &-container {
+      display: inline-block;
+      // grid-template-columns: 1fr;
+      // grid-template-rows: 3fr 7fr;
+      // grid-template-areas: "image" "text";
+      // grid-column-gap: 0px;
+      // grid-row-gap: 0px;
+    }
+
+    &-container .gridImg img {
+      border-radius: 0 0 10px 10px;
+    }
+
+    // .text {
+    //   order: 2;
+    // }
+
+    // img {
+    //   order: 1;
+    // }
+  }
+
+  .input-group-lg {
+    width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-group-lg {
+    width: 300px;
+  }
+}
+
+.flexForInputStyle {
+  display: flex;
+  align-items: center;
+  width: 110%;
+}
+// @media (min-width: 768px) {
+
+//   .checkboxStyle{
+//     display:flex;
+//   }
+
+// }

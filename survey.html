@@ -1,270 +1,174 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <!-- head 開始 -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/8d42bfc726.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/style/all.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="assets/images/layout/header/chr_D.svg"
-      type="image/x-icon"
-    />
-    <!-- X-UA-Compatible設置IE兼容模式，什麼版本IE 就用什麼版本的標準模式 開始 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- X-UA-Compatible設置IE兼容模式，什麼版本IE 就用什麼版本的標準模式 結束 -->
-    <!-- 聲明我的 HTML 使用了 XML Friends Network (XFN) 微格式 開始 -->
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <!-- 聲明我的 HTML 使用了 XML Friends Network (XFN) 微格式 結束 -->
-    <!-- Safari在讀取網頁時就會知道我們希望這個網頁有原生APP的特性(像是在手機螢幕有自己的icon等等) 開始 -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-title"
-      content="預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮"
-    />
-    <!-- Safari在讀取網頁時就會知道我們希望這個網頁有原生APP的特性(像是在手機螢幕有自己的icon等等) 結束 -->
+<!-- head 開始 -->
 
-    <title>預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮</title>
-    <meta
-      name="description"
-      content="拾夢客製化婚顧服務、婚禮佈置、派對規劃，與新人一同打造夢想婚禮，預約諮詢婚宴規劃"
-    />
-    <!-- 加上這段標籤跟沒加的道理是一樣的，等於搜尋引擎將正常索引及檢索，指定 -1 代表網頁摘要長度不限 開始 -->
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="googlebot"
-      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-    />
-    <meta
-      name="bingbot"
-      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-    />
-    <!-- 加上這段標籤跟沒加的道理是一樣的，等於搜尋引擎將正常索引及檢索，指定 -1 代表網頁摘要長度不限 結束 -->
-    <link rel="canonical" href="http://dctwedding.com/survey" />
-    <meta property="og:locale" content="zh_TW" />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:title"
-      content="預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮"
-    />
-    <meta
-      property="og:description"
-      content="拾夢客製化婚顧服務、婚禮佈置、派對規劃，與新人一同打造夢想婚禮，預約諮詢婚宴規劃"
-    />
-    <meta property="og:url" content="http://dctwedding.com/survey" />
-    <meta
-      property="og:site_name"
-      content="DCT Wedding 拾夢婚顧 西式婚禮 戶外婚禮"
-    />
-    <meta
-      property="article:modified_time"
-      content="2020-06-26T15:19:33+00:00"
-    />
-    <meta
-      property="og:image"
-      content="http://dctwedding.com/assets/resized_photo/portfolio/戶外婚禮企劃，婚禮佈置分享-19.jpg"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- google-analytics js 開始 -->
-    <!-- google-analytics js 結束 -->
-    <!-- fb js 開始 -->
-    <!-- fb js 結束 -->
-  </head>
-  <!-- head 結束 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/8d42bfc726.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/style/all.css" />
+  <link rel="stylesheet" href="assets/style/survey.min.css" />
 
-  <body>
-    <header class="header">
-      <nav
-        id="navApp"
-        class="navbar navbar-expand-lg navbar-light bg-yellow fixed-top pt-3 pb-2 pt-md-4 pb-md-3"
-      >
-        <!--fixed-top-->
-        <div class="container px-3">
-          <a class="navbar-brand d-lg-none" href="index.html">
-            <img
-              class="navbar-brand-img-left"
-              src="assets/images/layout/header/Logo.png"
-              alt="brand logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="assets/images/layout/header/chr_D.svg" type="image/x-icon" />
+  <!-- X-UA-Compatible設置IE兼容模式，什麼版本IE 就用什麼版本的標準模式 開始 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- X-UA-Compatible設置IE兼容模式，什麼版本IE 就用什麼版本的標準模式 結束 -->
+  <!-- 聲明我的 HTML 使用了 XML Friends Network (XFN) 微格式 開始 -->
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <!-- 聲明我的 HTML 使用了 XML Friends Network (XFN) 微格式 結束 -->
+  <!-- Safari在讀取網頁時就會知道我們希望這個網頁有原生APP的特性(像是在手機螢幕有自己的icon等等) 開始 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
-          <div
-            class="collapse navbar-collapse navbar-nav-left"
-            id="navbarNavAltMarkup"
-          >
-            <ul
-              class="navbar-nav header-nav d-flex align-items-center align-items-lg-end"
-            >
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="aboutUs.html"
-                >
-                  About<span class="">關於我們</span>
-                </a>
-              </li>
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="service.html"
-                >
-                  Service<span class="">服務項目</span>
-                </a>
-              </li>
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="portfolio.html"
-                >
-                  Portfolio<span class="">作品錦集</span>
-                </a>
-              </li>
-              <li class="nav-item d-none d-lg-block mb-lg-0 mb-4">
-                <a class="navbar-brand" href="index.html">
-                  <img
-                    class="navbar-brand-img-center"
-                    src="assets/images/layout/header/Logo.png"
-                    alt="brand logo"
-                  />
-                </a>
-              </li>
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="blog.html"
-                >
-                  Story<span class="">婚顧故事</span>
-                </a>
-              </li>
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="feedback_fb.html"
-                >
-                  Feedback<span class="">新人回饋</span>
-                </a>
-              </li>
-              <li class="nav-item mb-lg-0 mb-4">
-                <a
-                  class="nav-link text-center d-flex flex-column"
-                  href="survey.html"
-                >
-                  Contact<span class="">線上預約</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮" />
+  <!-- Safari在讀取網頁時就會知道我們希望這個網頁有原生APP的特性(像是在手機螢幕有自己的icon等等) 結束 -->
+
+  <title>預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮</title>
+  <meta name="description" content="拾夢客製化婚顧服務、婚禮佈置、派對規劃，與新人一同打造夢想婚禮，預約諮詢婚宴規劃" />
+  <!-- 加上這段標籤跟沒加的道理是一樣的，等於搜尋引擎將正常索引及檢索，指定 -1 代表網頁摘要長度不限 開始 -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- 加上這段標籤跟沒加的道理是一樣的，等於搜尋引擎將正常索引及檢索，指定 -1 代表網頁摘要長度不限 結束 -->
+  <link rel="canonical" href="http://dctwedding.com/survey" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="預約戶外婚禮，諮詢婚禮顧問｜DCT Wedding 拾夢西式婚禮" />
+  <meta property="og:description" content="拾夢客製化婚顧服務、婚禮佈置、派對規劃，與新人一同打造夢想婚禮，預約諮詢婚宴規劃" />
+  <meta property="og:url" content="http://dctwedding.com/survey" />
+  <meta property="og:site_name" content="DCT Wedding 拾夢婚顧 西式婚禮 戶外婚禮" />
+  <meta property="article:modified_time" content="2020-06-26T15:19:33+00:00" />
+  <meta property="og:image" content="http://dctwedding.com/assets/resized_photo/portfolio/戶外婚禮企劃，婚禮佈置分享-19.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- google-analytics js 開始 -->
+  <!-- google-analytics js 結束 -->
+  <!-- fb js 開始 -->
+  <!-- fb js 結束 -->
+</head>
+<!-- head 結束 -->
+
+<body>
+  <header class="header">
+    <nav id="navApp" class="navbar navbar-expand-lg navbar-light bg-yellow fixed-top pt-3 pb-2 pt-md-4 pb-md-3">
+      <!--fixed-top-->
+      <div class="container px-3">
+        <a class="navbar-brand d-lg-none" href="index.html">
+          <img class="navbar-brand-img-left" src="assets/images/layout/header/Logo.png" alt="brand logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-nav-left" id="navbarNavAltMarkup">
+          <ul class="navbar-nav header-nav d-flex align-items-center align-items-lg-end">
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="aboutUs.html">
+                About<span class="">關於我們</span>
+              </a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="service.html">
+                Service<span class="">服務項目</span>
+              </a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="portfolio.html">
+                Portfolio<span class="">作品錦集</span>
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block mb-lg-0 mb-4">
+              <a class="navbar-brand" href="index.html">
+                <img class="navbar-brand-img-center" src="assets/images/layout/header/Logo.png" alt="brand logo" />
+              </a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="blog.html">
+                Story<span class="">婚顧故事</span>
+              </a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="feedback_fb.html">
+                Feedback<span class="">新人回饋</span>
+              </a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a class="nav-link text-center d-flex flex-column" href="survey.html">
+                Contact<span class="">線上預約</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <div class="grid-container">
-      <div class="text  main-content-survey">
-        <div class="container-md survey-title text-center py-4">
-          <h1 class="h6">打造我的婚禮</h1>
-        </div>
-        <div class="container">
-          <form class="" name="form">
-            <ul class="survyList form-row">
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserNameId" required="">姓名</label>
-                <input
-                  class="form-control"
-                  id="surveyUserNameId"
-                  name="surveyUserName"
-                  required=""
-                  type="text"
-                  value=""
-                />
-              </li>
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserEmailId" required="">e-mail</label>
-                <input
-                  class="form-control"
-                  id="surveyUserEmailId"
-                  name="surveyUserEmail"
-                  required=""
-                  type="email"
-                  value=""
-                />
-              </li>
-              <li class="col-md-4 mb-4 mb-md-4">
-                <label for="surveyUserPhoneId" required="">聯絡電話</label>
-                <input
-                  class="form-control"
-                  id="surveyUserPhoneId"
-                  name="surveyUserPhone"
-                  type="text"
-                  value=""
-                />
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyServiceId">服務需求</label>
-                <select
-                  class="custom-select"
-                  id="surveyServiceId"
-                  name="surveyService"
-                >
-                  <option selected="" value="-請選擇-">-請選擇-</option>
-                  <option value="婚顧服務">婚顧服務</option>
-                  <option value="婚禮佈置">婚禮佈置</option>
-                  <option value="婚顧 + 佈置">婚顧 + 佈置</option>
-                  <option value="派對規劃">派對規劃</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyDateId">日期</label>
-                <input
-                  class="form-control"
-                  id="surveyDateId"
-                  name="surveyDate"
-                  placeholder="yyyy/mm/dd"
-                  type="date"
-                />
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyTypeId">形式</label>
-                <select
-                  class="custom-select"
-                  id="surveyTypeId"
-                  name="surveyType"
-                >
-                  <option selected="" value="-請選擇-">-請選擇-</option>
-                  <option value="純證婚">純證婚</option>
-                  <option value="純宴客">純宴客</option>
-                  <option value="證婚 + 宴客">證婚 + 宴客</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyScenesId">證婚場地</label>
-                <select
+      </div>
+    </nav>
+  </header>
+  <div class="surveyGrid-container">
+    <div class="text main-content-survey">
+      <div class="container-md survey-title text-left py-4 contact">
+        <h1 class="contact-title"> Contact Us</h1>
+      </div>
+      <div class="container">
+        <form class="" name="form">
+          <ul class="survyList form-row">
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyUserNameId" required="" class="sruveyside">
+                <div class="sruveyside-Title">聯絡人姓名</div>
+                <div class="sruveyside-TitleE">NAME</div>
+              </label>
+              <input placeholder="請輸入姓名" class="form-control" id="surveyUserNameId" name="surveyUserName" required=""
+                type="text" value="" />
+            </li>
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyUserPhoneId" required="" class="sruveyside">
+                <div class="sruveyside-Title">連絡電話</div>
+                <div class="sruveyside-TitleE">PHONE NO.</div>
+              </label>
+              <input placeholder="請輸入電話" class="form-control" id="surveyUserPhoneId" name="surveyUserPhone" required=""
+                type="text" value="" />
+            </li>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyUserEmailId" required="" class="sruveyside">
+                <div class="sruveyside-Title">Email</div>
+              </label>
+              <input placeholder="請輸入Email" class="form-control" id="surveyUserEmailId" name="surveyUserEmail"
+                required="" type="email" value="" />
+            </li>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyUserLineId" required="" class="sruveyside">
+                <div class="sruveyside-Title">LINE ID</div>
+              </label>
+              <input placeholder="請輸入LINE ID" class="form-control" id="surveyUserLineId" name="surveyUserLine"
+                required="" type="text" value="" />
+            </li>
+            <li class="col-md-6 mb-4 mb-md-4  survyList-input">
+              <label for="surveyDateId" class="sruveyside">
+                <div class="sruveyside-Title">預計婚期</div>
+                <div class="sruveyside-TitleE">DATE</div>
+              </label>
+              <input placeholder="請輸入預計婚期" class="form-control" id="surveyDateId" name="surveyDate" required=""
+                type="text" />
+              <!-- placeholder="yyyy/mm/dd"
+                type="date" -->
+            </li>
+            <li class="col-md-6 mb-4 mb-md-4 survyList-input">
+              <label for="surveyScenesId" class="sruveyside">
+                <div class="sruveyside-Title">婚禮場地</div>
+                <div class="sruveyside-TitleE">VENUE</div>
+              </label>
+              <input placeholder="請輸入婚禮場地" class="form-control" id="surveyScenesId" name="surveyScenes" required="" />
+
+              <!-- <select
                   class="custom-select"
                   id="surveyScenesId"
                   name="surveyScenes"
@@ -274,10 +178,123 @@
                   <option value="草地">草地</option>
                   <option value="教堂">教堂</option>
                   <option value="無需證婚">無需證婚</option>
-                </select>
+                </select> -->
+            </li>
+            <li class="col-md-12 mb-4 mb-md-4 survyList-input">
+              <label for="surveyAttendanceId" class="sruveyside">
+                <div class="sruveyside-Title">參加人數</div>
+                <div class="sruveyside-TitleE">THE NUMBER　OF PEOPLE</div>
+              </label>
+              <input placeholder="請輸入參加人數" class="form-control" id="surveyAttendanceId" name="surveyAttendance"
+                type="text" required />
+              <!-- <select
+                  class="custom-select"
+                  id="surveyAttendanceId"
+                  name="surveyAttendance"
+                  required
+                >
+                  <option selected="" value="">-請選擇-</option>
+                  <option value="50 人以內">50 人以內</option>
+                  <option value="50-100人">50-100人</option>
+                  <option value="100-150人">100-150人</option>
+                  <option value="150 人以上">150 人以上</option>
+                </select> -->
+            </li>
+
+            <!-- <select
+                  class="custom-select"
+                  id="surveyServiceId"
+                  name="surveyService"
+                >
+                  <option selected="" value="-請選擇-">-請選擇-</option>
+                  <option value="婚顧服務">婚顧服務</option>
+                  <option value="婚禮佈置">婚禮佈置</option>
+                  <option value="婚顧 + 佈置">婚顧 + 佈置</option>
+                  <option value="派對規劃">派對規劃</option>
+                </select> -->
+            <div class="col-md-12 mb-4 mb-md-4 d-flex surveySelect">
+              <div class="surveySelectTitle">
+                <div>服務需求 (可複選)</div>
+                <p class="sruveysideTitle">SERVICE REQUIREMENTS</p>
+              </div>
+              <li class="surveySelect-option">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="services" value="婚 顧 規 劃" id="services1">
+                  <label for="services1">婚顧規劃</label>
+                </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyLocationId">地區</label>
+              <li class="surveySelect-option">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="services" value="婚禮佈置" id="services2">
+                  <label for="services2">婚禮佈置</label>
+                </div>
+              </li>
+              <li class="surveySelect-option">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="services" value="派對規劃" id="services4">
+                  <label for="services4">派對規劃</label>
+                </div>
+              </li>
+
+            </div>
+
+            <!-- <li class="col-md-6 mb-4 mb-md-4">
+                <label for="surveyTypeId">形式</label>
+                <select
+                class="custom-select"
+                id="surveyTypeId"
+                name="surveyType"
+                >
+                  <option selected="" value="-請選擇-">-請選擇-</option>
+                  <option value="純證婚">純證婚</option>
+                  <option value="純宴客">純宴客</option>
+                  <option value="證婚 + 宴客">證婚 + 宴客</option>
+                </select>
+              </li> -->
+
+            <div class="col-md-12 mb-4 mb-md-4 d-flex surveySelect">
+              <div class="surveySelectTitle">
+                <div>婚禮形式 (可複選)</div>
+                <p class="sruveysideTitle">TYPES</p>
+              </div>
+              <div class="moreThanThree">
+
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyTypeId" value="迎娶儀式" id="chk1">
+                    <label for="chk1">迎娶儀式</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyTypeId" value="文定儀式" id="chk2">
+                    <label for="chk2">文定儀式</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyTypeId" value="西式證婚" id="chk3">
+                    <label for="chk3">西式證婚</label>
+                  </div>
+                </li>
+
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyTypeId" value="宴客" id="chk4">
+                    <label for="chk4">宴客</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyTypeId" value="After Party" id="chk5">
+                    <label for="chk5">After Party</label>
+                  </div>
+                </li>
+
+              </div>
+            </div>
+            <!-- <li class="col-md-6 mb-4 mb-md-4"> -->
+            <!-- <label for="surveyLocationId">地區</label>
                 <select
                   class="custom-select"
                   id="surveyLocationId"
@@ -286,32 +303,19 @@
                   <option selected="" value="-請選擇-">-請選擇-</option>
                   <option value="大台北地區">大台北地區</option>
                   <option value="其他縣市">其他縣市</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyUserVenueId">宴客場地</label>
+                </select> -->
+            <!-- </li> -->
+            <!-- <li class="col-md-12 mb-4 mb-md-4">
+                <label for="surveyUserVenueId"class="d-flex">宴客場地<div class="text-danger">*</div></label>
                 <input
                   class="form-control"
                   id="surveyUserVenueId"
                   name="surveyUserVenue"
                   type="text"
+                  required=""
                 />
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
-                <label for="surveyAttendanceId">參加人數</label>
-                <select
-                  class="custom-select"
-                  id="surveyAttendanceId"
-                  name="surveyAttendance"
-                >
-                  <option selected="" value="-請選擇-">-請選擇-</option>
-                  <option value="50 人以內">50 人以內</option>
-                  <option value="50-100人">50-100人</option>
-                  <option value="100-150人">100-150人</option>
-                  <option value="150 人以上">150 人以上</option>
-                </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              </li> -->
+            <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyChineseCeremonyId">中式儀式需求</label>
                 <select
                   class="custom-select"
@@ -324,8 +328,57 @@
                   <option value="文定+迎娶">文定+迎娶</option>
                   <option value="不需要中式儀式">不需要中式儀式</option>
                 </select>
+              </li> -->
+            <div class="col-md-12 mb-4 mb-md-4 d-flex surveySelect">
+              <div class="surveySelectTitle">
+                <div>餐點形式 (可複選)</div>
+                <p class="sruveysideTitle">TYPE OF FOOD</p>
+              </div>
+              <div class="inputflexStyle">
+
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="mealForm" value="西式自助餐" id="mealForm1">
+                    <label for="mealForm1">西式自助餐</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="mealForm" value="中式餐桌" id="mealForm2">
+                    <label for="mealForm2">中式餐桌</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox survyList-input">
+
+                    <label for="mealForm3" ><input type="checkbox" name="mealForm" value="其他"
+                        id="mealForm3">其他</label>
+                    <input id="mealFormOtherInput" name="mealForm" type="text" />
+                  </div>
+                </li>
+              </div>
+            </div>
+
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>宴客時間(可複選)</div>
+                <p class="sruveysideTitle">BANQUET TIME</p>
+              </div>
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="banquetTime" value="午宴" id="banquetTime1">
+                  <label for="banquetTime1">午宴</label>
+                </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="banquetTime" value="晚宴" id="banquetTime2">
+                  <label for="banquetTime2">晚宴</label>
+                </div>
+              </li>
+
+            </div>
+            <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyBilingualId">雙語服務需求</label>
                 <select
                   class="custom-select"
@@ -336,8 +389,97 @@
                   <option value="需要">需要</option>
                   <option value="不需要">不需要</option>
                 </select>
+              </li> -->
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>雙語服務需求(可複選)</div>
+                <p class="sruveysideTitle">BILINGUAL SERVICE</p>
+              </div>
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="bilingual" value="是" id="bilingual1">
+                  <label for="bilingual1">是</label>
+                </div>
               </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="bilingual" value="否" id="bilingual2">
+                  <label for="bilingual2">否</label>
+                </div>
+              </li>
+
+            </div>
+            <div class="col-md-12 mb-4 mb-md-4 d-flex">
+              <div class="surveySelectTitle">
+                <div>喜帖設計(可複選)</div>
+                <p class="sruveysideTitle">WEDDING INVITATION DESIGN</p>
+              </div>
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="stickerDesign" value="是" id="stickerDesign1">
+                  <label for="stickerDesign1">是</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="stickerDesign" value="否" id="stickerDesign2">
+                  <label for="stickerDesign2">否</label>
+                </div>
+              </li>
+
+            </div>
+            <div class="col-md-12 mb-4 mb-md-4 d-flex surveySelect">
+              <div class="surveySelectTitle">
+                <div>如何得知我們(可複選)</div>
+                <p class="sruveysideTitle">HOW DO YOU KNOW US</p>
+              </div>
+              <div class="moreThanThree">
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyUserSourceId" value="親友介紹" id="surveyUserSourceId1">
+                    <label for="surveyUserSourceId1">親友介紹</label>
+                  </div>
+                </li>
+               
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyUserSourceId" value="網頁搜尋" id="surveyUserSourceId2">
+                    <label for="surveyUserSourceId2">網頁搜尋</label>
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyUserSourceId" value="臉書" id="surveyUserSourceId3">
+                    <label for="surveyUserSourceId3">Facebook</label>
+                  </div>
+                </li>
+               
+                <li class="surveySelect-optionWithInput">
+                  <div class="custom-checkbox survyList-input">
+                    <input type="checkbox" name="surveyUserSourceId" value="廠商推薦" id="surveyUserSourceId5">
+                    <label for="surveyUserSourceId5" >廠商推薦</label>
+                    <input id="surveyUserSourceMRIdInput" name="surveyDate" type="text" />
+                  </div>
+                </li>
+                <li class="surveySelect-option">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" name="surveyUserSourceId" value="IG" id="surveyUserSourceId4">
+                    <label for="surveyUserSourceId4">IG</label>
+                  </div>
+                </li>
+                <li class="surveySelect-optionWithInput">
+                  <div class="custom-checkbox  survyList-input"">
+                    <input type="checkbox" name="surveyUserSourceId" value="其他" id="surveyUserSourceId6">                    
+                    <label for=" surveyUserSourceId6" >其他
+                    </label>
+                    <input id="surveyUserSourceIdInput" name="surveyDate" type="text" />
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div>
+
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyInvitationCardId">喜帖設計需求</label>
                 <select
                   class="custom-select"
@@ -348,8 +490,8 @@
                   <option value="需要">需要</option>
                   <option value="不需要">不需要</option>
                 </select>
-              </li>
-              <li class="col-md-6 mb-4 mb-md-4">
+              </li> -->
+              <!-- <li class="col-md-6 mb-4 mb-md-4">
                 <label for="surveyUserSourceId">如何得知我們</label>
                 <select
                   class="custom-select"
@@ -364,154 +506,108 @@
                   <option value="廠商推薦">廠商推薦</option>
                   <option value="其他">其他</option>
                 </select>
-              </li>
+              </li> -->
               <li class="col-md-12 mb-4 mb-md-4 input-group-lg">
-                <label for="surveyProgressId"
-                  >關於籌備進度，有什麼想告訴我們的嗎</label
-                >
-                <textarea
-                  class="w-100 border-0 form-control"
-                  cols=""
-                  id="surveyProgressId"
-                  name="surveyProgress"
-                  rows="10"
-                ></textarea>
+                <label for="surveyProgressId">關於籌備進度，有什麼想告訴我們的嗎</label>
+                <p class="sruveysideTitle">ANY QUESTIONS ABOUT WEDDING PREPARING</p>
+
+                <textarea class="w-100 border-0 form-control" cols="" id="surveyProgressId" name="surveyProgress"
+                  rows="10"></textarea>
               </li>
               <li class="col-md-12 mb-4 mb-md-4">
-                <button
-                  class="btn btn-success"
-                  id="surveySubmitId"
-                  type="submit"
-                >
+                <button class="btn btn-success" id="surveySubmitId" type="submit">
                   Submit
                 </button>
               </li>
-            </ul>
-          </form>
-        </div>
-        <!-- -->
+          </ul>
+        </form>
       </div>
-      <img class="gridImg" src="assets\resized_photo\aboutUs\拾夢婚顧介紹，戶外婚禮專家-2 2.png" alt="image">
-      </div>
+      <!-- -->
     </div>
+    <div class="gridImg">
+      <img src="assets\resized_photo\survey\粉橘奶茶2.jpg" alt="form表單圖片">
+    </div>
+  </div>
+  </div>
 
-    <footer>
-      <div class="container">
-        <ul class="footerContactUsList">
-          <li class="footerContactUsItem">
-            <ul class="socialMedia">
-              <li class="pr-4">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/dctwedding/?fref=ts"
-                >
-                  <img
-                    class="socialMediaImg"
-                    src="assets/images/layout/footer/facebook.svg"
-                    alt="facebook icon"
-                  />
-                </a>
-              </li>
-              <li class="pr-4">
-                <a
-                  target="_blank"
-                  href="https://www.pinterest.com/dctweddingtw/"
-                >
-                  <img
-                    class="socialMediaImg"
-                    src="assets/images/layout/footer/pinterest.svg"
-                    alt="pinterest icon"
-                  />
-                </a>
-              </li>
-              <li class="pr-4">
-                <a
-                  target="_blank"
-                  href="https://instagram.com/dctwedding?igshid=1rvf6aq8jeguq"
-                >
-                  <img
-                    class="socialMediaImg"
-                    src="assets/images/layout/footer/instagram.svg"
-                    alt="instagram icon"
-                  />
-                </a>
-              </li>
-              <li class="pr-4">
-                <a target="_blank" href="https://line.me/R/ti/p/%40tzu6169y">
-                  <img
-                    class="socialMediaImg"
-                    src="assets/images/layout/footer/line.svg"
-                    alt="line icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footerContactUsItem">
-            <p>Copyright © 2023 DCT Wedding All rights reserved.</p>
-          </li>
-        </ul>
-      </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <ul class="footerContactUsList">
+        <li class="footerContactUsItem">
+          <ul class="socialMedia">
+            <li class="pr-4">
+              <a target="_blank" href="https://www.facebook.com/dctwedding/?fref=ts">
+                <img class="socialMediaImg" src="assets/images/layout/footer/facebook.svg" alt="facebook icon" />
+              </a>
+            </li>
+            <li class="pr-4">
+              <a target="_blank" href="https://www.pinterest.com/dctweddingtw/">
+                <img class="socialMediaImg" src="assets/images/layout/footer/pinterest.svg" alt="pinterest icon" />
+              </a>
+            </li>
+            <li class="pr-4">
+              <a target="_blank" href="https://instagram.com/dctwedding?igshid=1rvf6aq8jeguq">
+                <img class="socialMediaImg" src="assets/images/layout/footer/instagram.svg" alt="instagram icon" />
+              </a>
+            </li>
+            <li class="pr-4">
+              <a target="_blank" href="https://line.me/R/ti/p/%40tzu6169y">
+                <img class="socialMediaImg" src="assets/images/layout/footer/line.svg" alt="line icon" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footerContactUsItem">
+          <p>Copyright © 2023 DCT Wedding All rights reserved.</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-    <!--popover js-->
-    <!-- <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script> -->
+  <!--popover js-->
+  <!-- <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script> -->
 
-    <!--bootstrap js-->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+  <!--bootstrap js-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-    <script src="assets/js/all.js"></script>
-    <!-- emailjs -->
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
-    ></script>
+  <script src="assets/js/all.js"></script>
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <!-- DCT FB 開始 -->
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v7.0",
+      });
+    };
 
-    <!-- DCT FB 開始 -->
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v7.0",
-        });
-      };
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="686068714820710" theme_color="#d4a88c"
+    logged_in_greeting="Hello, 有什麼想法需求都可以與我們討論喔！" logged_out_greeting="Hello, 有什麼想法需求都可以與我們討論喔！"></div>
+  <!-- DCT FB 結束 -->
+</body>
 
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="686068714820710"
-      theme_color="#d4a88c"
-      logged_in_greeting="Hello, 有什麼想法需求都可以與我們討論喔！"
-      logged_out_greeting="Hello, 有什麼想法需求都可以與我們討論喔！"
-    ></div>
-    <!-- DCT FB 結束 -->
-  </body>
 </html>
