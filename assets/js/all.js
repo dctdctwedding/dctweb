@@ -36,7 +36,10 @@ function sendSurvey() {
 }*/
 // const submitBtn = document.querySelector('[data-action="submit"]');
 const submitBtn = document.getElementById('surveySubmitId');
-
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
 submitBtn.addEventListener("click", processFormData);
 
     function processFormData(e) {
@@ -124,25 +127,18 @@ submitBtn.addEventListener("click", processFormData);
         //餐點形式
         const MealFormList = mealFormList
         let mealFormOtherInput = form.elements.mealFormOtherInput.value;
-        if(mealFormOtherInput.length > 0 ){
-            MealFormList.push(mealFormOtherInput)
-         }
+       
         //雙語服務
         const Bilingual = bilingualList;
         //喜帖設計 
         // const InvitationCard = form.elements.surveyInvitationCardId.value;
         const InvitationCard = stickerDesignList;
         // const UserSource = form.elements.surveyUserSourceId.value;
-       //如何得知
-       let otherSurveyUserSourceIdInput = form.elements.surveyUserSourceIdInput.value;
-       let surveyUserSourceMRIdInput =form.elements.surveyUserSourceMRIdInput.value;
-       if(otherSurveyUserSourceIdInput.length > 0 ){
-           surveyUserSourceList.push(otherSurveyUserSourceIdInput)
-        }
-        if(surveyUserSourceMRIdInput.length > 0 ){
-            surveyUserSourceList.push(surveyUserSourceMRIdInput)
-         }
- 
+       //如何得知的其他
+       let UserSourceOther = form.elements.surveyUserSourceIdInput.value;
+       //廠商推薦
+       let UserSourceVendorRecommended =form.elements.surveyUserSourceMRIdInput.value;
+     
 
 
         const UserSource = surveyUserSourceList;
@@ -161,13 +157,17 @@ submitBtn.addEventListener("click", processFormData);
             // "UserVenue": UserVenue,
             "Attendance": Attendance,
             // "ChineseCeremony": ChineseCeremony,
+            "banquetTime":banquetTime,
             "Bilingual": Bilingual,
             "InvitationCard": InvitationCard,
             "UserSource": UserSource,
+            "UserSourceOther": UserSourceOther,   
+            "UserSourceVendorRecommended": UserSourceVendorRecommended,               
             "Progress": Progress,
             "Line":UserLine,
             "Submit": Submit,
-            "MealFormList":MealFormList
+            "MealFormList":MealFormList,
+            "mealFormOtherInput":mealFormOtherInput
         };
          let mustCheck_params = {
             "UserName": UserName,
@@ -191,12 +191,35 @@ submitBtn.addEventListener("click", processFormData);
         console.log(template_params ,'template_params')
         for (let key in mustCheck_params) {
             if (mustCheck_params[key] === "") {
-              
+                  
+                
                 console.log(`Key: ${translate[key]} has empty value.`);
                 Toastify({
                   text: `${translate[key]} 尚未填寫.`,
                   duration: 6000,
-                  destination: "https://github.com/apvarun/toastify-js",
+                  destination: "",
+                  newWindow: true,
+                  close: true,
+                  gravity: "top", // `top` or `bottom`
+                  position: "left", // `left`, `center` or `right`
+                  stopOnFocus: true, // Prevents dismissing of toast on hover
+                  style: {
+                    background: "linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113))",
+                  },
+                  onClick: function(){
+                  } // Callback after click
+                }).showToast();
+                return
+            }else {
+              console.log(mustCheck_params[key],'mustCheck_params[key]')
+              console.log(key === "UserEmail",'key === "UserEmail"')
+              console.log(validateEmail(mustCheck_params[key]),'validateEmail(mustCheck_params[key])')
+              if(key === "UserEmail"  ) {
+                if( !validateEmail(mustCheck_params[key])){
+                Toastify({
+                  text: `電子信箱格式錯誤`,
+                  duration: 6000,
+                  destination: "",
                   newWindow: true,
                   close: true,
                   gravity: "top", // `top` or `bottom`
@@ -208,9 +231,11 @@ submitBtn.addEventListener("click", processFormData);
                   onClick: function(){} // Callback after click
                 }).showToast();
                 return
+              }
             }
+          }
           }  
-
+          
         // 要使用再打開 yooo
         /**/
         // emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
@@ -218,16 +243,14 @@ submitBtn.addEventListener("click", processFormData);
         // var template_id = "wedding_2020";
         // emailjs.send(service_id, template_id, template_params);
         //公鑰
-        
         emailjs.init("GW5fMt_RXRxjeBdT9");
         var service_id = "service_x0pe893";
         var template_id = "template_2nbvo2s";
-        // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
         emailjs.send(service_id, template_id, template_params).then(function(response) {
           Toastify({
             text: "恭喜你填單完成，我們將於3個⼯作天內回覆，期待我們能夠⼀起打造屬於你們夢想的婚禮！",
-            duration: 6000,
-            destination: "https://github.com/apvarun/toastify-js",
+            duration: -1,
+            destination: "",
             newWindow: true,
             close: true,
             gravity: "top", // `top` or `bottom`
@@ -243,8 +266,8 @@ submitBtn.addEventListener("click", processFormData);
       Toastify({
         text: error,
         duration: 6000,
-        destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
+        destination: "",
+        newWindow: false,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "left", // `left`, `center` or `right`
@@ -255,8 +278,7 @@ submitBtn.addEventListener("click", processFormData);
         onClick: function(){} // Callback after click
       }).showToast();
     });
-        // console.log("emailjs send");
-        // alert("成功寄出預約表單囉")
+       
        
         
 }
