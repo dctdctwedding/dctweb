@@ -151,11 +151,11 @@
     column-count: 3;
     column-width: 90px;
   }
-  
+
   &-option {
     margin-right: 10px;
   }
- 
+
   label {
     white-space: nowrap;
   }
@@ -186,13 +186,12 @@
 //複選規則
 
 @media (max-width: 1260px) {
-//rwd 如何得知我們(可複選) 小視窗 顯示模式
+  //rwd 如何得知我們(可複選) 小視窗 顯示模式
   .surveySelect {
     .moreThanThree {
       column-count: 1;
       column-width: 90px;
-    }  
-
+    }
   }
 
   .sruveyside {
@@ -200,7 +199,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
   .surveyGrid {
     &-container {
       display: inline-block;
@@ -211,8 +210,16 @@
       // grid-row-gap: 0px;
     }
 
-    &-container .gridImg img {
-      border-radius: 0 0 10px 10px;
+    &-container .gridImg {
+      width: 100%;
+      height: 600px;
+      img {
+        border-radius: 0 0 10px 10px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+      }
     }
 
     // .text {
