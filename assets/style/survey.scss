@@ -162,7 +162,10 @@
     column-count: 3;
     column-width: 90px;
   }
-
+  .onlyThree {
+    display: flex;
+    align-items: top;
+  }
   &-option {
     margin-right: 10px;
   }
@@ -202,6 +205,11 @@
     .moreThanThree {
       column-count: 1;
       column-width: 90px;
+    }
+    .onlyThree {
+      column-count: 1;
+      column-width: 90px;
+      flex-direction: column;
     }
   }
 
