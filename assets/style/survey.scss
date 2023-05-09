@@ -15,30 +15,63 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 2px;
+  // input[type="checkbox"] {
+  //   /* CSS 屬性讓 checkbox 變成圓形 */
+  //   -webkit-appearance: none;
+  //   -moz-appearance: none;
+  //   appearance: none;
+  //   border-radius: 50%;
+  //   width: 14px;
+  //   height: 14px;
+  //   border: 1px solid #ccc;
+  //   margin: 0;
+  //   cursor: pointer;
 
-  input[type="checkbox"] {
-    /* CSS 屬性讓 checkbox 變成圓形 */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 50%;
-    width: 14px;
-    height: 11px;
-    border: 1px solid #ccc;
-    margin: 0;
-    cursor: pointer;
+  //   &:checked {
+  //     background-color: #d2d2d1;
+  //   }
+  // }
 
-    &:checked {
-      background-color: #d2d2d1;
+  position: relative;
+	&:hover > .label {
+		//color: $accent-color;
+		&::before {
+			border: 0.4rem solid $accent-color;
+		}
+	}
+
+  .radio-btn {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    &:checked + .label {
+      color: $accent-color;
+      &::before {
+        border: 0.4rem solid $accent-color;
+        background: $primary-color;
+      }
     }
   }
 
-  label {
-    margin: 0;
+  .label {
     font-weight: normal;
+
     cursor: pointer;
-    width: 80%;
+    transition: all 0.25s linear;
   }
+
+  .label::before {
+    display: inline-block;
+    content: "";
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: 0.625rem;
+    border: 0.4rem solid ;
+    border-radius: 50%;
+    transition: all 0.25s linear;
+  }
+
 }
 
 .sruveysideTitle {
@@ -137,7 +170,7 @@
           background-color: $primary-white;
         }
 
-        + .input-20{
+        + .input-20 {
           width: 35%;
         }
       }
@@ -222,7 +255,6 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
-
       }
     }
 
