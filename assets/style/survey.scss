@@ -35,7 +35,7 @@
 
   position: relative;
 	&:hover > .label {
-		//color: $accent-color;
+		color: $accent-color;
 		&::before {
 			border: 0.1rem solid $accent-color;
       
