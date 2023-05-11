@@ -21,7 +21,7 @@
 	&:hover > .label {
 		color: $accent-color;
 		&::before {
-			border: 0.6rem solid $accent-color;
+			border: 0.1rem solid $accent-color;
       
 		}
 	}
@@ -54,7 +54,7 @@
     height: 1.125rem;
     min-width: 1.125rem;
     margin-right: 0.625rem;
-    border: 0.4rem solid ;
+    border: 0.1rem solid ;
     border-radius: 50%;
     transition: all 0.25s linear;
   }
