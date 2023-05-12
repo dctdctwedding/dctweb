@@ -40,6 +40,10 @@ function validateEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+function validatePhone(email) {
+  const regex =  /^09\d{8}$/;
+  return regex.test(email);
+}
 submitBtn.addEventListener("click", processFormData);
 
     function processFormData(e) {
@@ -171,9 +175,9 @@ submitBtn.addEventListener("click", processFormData);
         };
          let mustCheck_params = {
             "UserName": UserName,
+            "UserPhone": UserPhone,
             "UserEmail": UserEmail,
             "Line":UserLine,
-            "UserPhone": UserPhone,
             "Date": Date,
             "Scenes":Scenes,
             "Attendance":Attendance,
@@ -210,10 +214,10 @@ submitBtn.addEventListener("click", processFormData);
                 }).showToast();
                 return
             }else {
-              if(key === "UserEmail"  ) {
-                if( !validateEmail(mustCheck_params[key])){
+              if(key === "UserPhone"  ) {
+                if( !validatePhone(mustCheck_params[key])){
                 Toastify({
-                  text: `電子信箱格式錯誤`,
+                  text: `電話格式錯誤`,
                   duration: 6000,
                   destination: "",
                   newWindow: true,
@@ -228,7 +232,25 @@ submitBtn.addEventListener("click", processFormData);
                 }).showToast();
                 return
               }
+            }else if(key === "UserEmail"  ) {
+              if( !validateEmail(mustCheck_params[key])){
+              Toastify({
+                text: `電子信箱格式錯誤`,
+                duration: 6000,
+                destination: "",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "left", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113))",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+              return
             }
+          }
           }
           }  
           
