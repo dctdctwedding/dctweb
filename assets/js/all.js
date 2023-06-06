@@ -256,14 +256,14 @@ submitBtn.addEventListener("click", processFormData);
           
         // 要使用再打開 yooo
         /**/
-        // emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
-        // var service_id = "default_service";
-        // var template_id = "wedding_2020";
+        emailjs.init("user_YM7dUJypL1Oog3Z6A0Clp");
+        var service_id = "default_service";
+        var template_id = "wedding_2020";
         // emailjs.send(service_id, template_id, template_params);
         //公鑰
-        emailjs.init("GW5fMt_RXRxjeBdT9");
-        var service_id = "service_x0pe893";
-        var template_id = "template_2nbvo2s";
+        // emailjs.init("GW5fMt_RXRxjeBdT9");
+        // var service_id = "service_x0pe893";
+        // var template_id = "template_2nbvo2s";
         emailjs.send(service_id, template_id, template_params).then(function(response) {
           Toastify({
             text: "恭喜你填單完成，我們將於3個⼯作天內回覆，期待我們能夠⼀起打造屬於你們夢想的婚禮！",
