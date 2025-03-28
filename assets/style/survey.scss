@@ -140,6 +140,14 @@
             }
           }
 
+          &.no-required {
+            .sruveyside-Title {
+              &::after {
+                display: none;
+              }
+            }
+          }
+
           &-TitleE {
             font-size: 8px;
           }
