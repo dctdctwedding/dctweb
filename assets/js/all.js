@@ -175,7 +175,6 @@ submitBtn.addEventListener("click", processFormData);
         };
          let mustCheck_params = {
             "UserName": UserName,
-            "UserPhone": UserPhone,
             "UserEmail": UserEmail,
             "Line":UserLine,
             "Date": Date,
@@ -186,7 +185,6 @@ submitBtn.addEventListener("click", processFormData);
         let translate = {
           "UserName":"聯絡人姓名",
           "UserEmail": "Email",
-          "UserPhone": "連絡電話",
           "Date": "預計婚期",
           "Scenes":"婚禮場地",
           "Attendance":"參加人數",
